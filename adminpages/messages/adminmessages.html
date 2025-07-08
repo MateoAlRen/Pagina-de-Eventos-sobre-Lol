@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator</title>
+    <link rel="shortcut icon" href="../../../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="../../assets/css/messages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/stadistics.css">
+</head>
+<body class="admin-theme">
+
+    <aside class="aside_bar">
+        <div class="links_container">
+            <!-- Navigation buttons for different sections -->
+            <a href="../stadistics/stadistics.html"><button class="aside_button" id="home">Home Events Stadistics</button></a>
+            <a href="./adminmessages.html"><button class="aside_button" id="create">Create an Event</button></a>
+            <a href="./adminmessages.html"><button class="aside_button" id="messages">Messages List</button></a>
+            <a href="../subscriptions/subscriptions.html" class="aside_button" id="subscriptions"><button>Subscriptions</button></a>
+
+            <!-- Logout button -->
+            <button type="button" id="logOut" class="logout">Log Out</button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="section admin-section column">
+        <div class="container">
+            <!-- Header -->
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <div>
+                            <h1 class="title admin-main-title">Manage the contact messages</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <button class="button is-dark" onclick="refreshMessages()">
+                            <span class="icon">🔄</span>
+                            <span>Update</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="box admin-filters">
+                <div class="field is-grouped">
+                    <div class="control is-expanded">
+                        <label class="label">Filter by email:</label>
+                        <input class="input" type="email" id="emailFilter" placeholder="Type the email...">
+                    </div>
+                    <div class="control is-expanded">
+                        <label class="label">Filter by name:</label>
+                        <input class="input" type="text" id="nameFilter" placeholder="Type the name...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messages Container -->
+            <div id="messagesContainer" class="admin-messages">
+                <div class="has-text-centered admin-no-messages">
+                    <div class="admin-empty-state">
+                        <span class="icon is-large">📭</span>
+                        <p class="title is-4">There's no messages...</p>
+                        <p class="subtitle">The messages will appear when the users send almost one.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card admin-modal">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Confirm Delete</p>
+                <button class="delete" aria-label="cerrar"></button>
+            </header>
+            <section class="modal-card-body">
+                <p>Are you sure if you want to delete this message? This action cannot be undoned.</p>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-danger is-small" id="confirmDeleteButton">
+                    🗑 Delete
+                </button>
+                <button class="button">Cancel</button>
+            </footer>
+        </div>
+    </div>
+
+   
+    <script src="../../assets/js/adminmessages.js"></script>
+</body>
+</html>

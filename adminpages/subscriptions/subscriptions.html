@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Administrator</title>
+  <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/subscriptions.css">
+  <link rel="stylesheet" href="../../assets/css/stadistics.css">
+  <link rel="stylesheet" href="../../assets/css/messages.css">
+</head>
+
+<body>
+
+  <aside class="aside_bar">
+    <div class="links_container">
+      <!-- Navigation buttons for different sections -->
+      <a href="../stadistics/stadistics.html">
+        <button class="aside_button" id="home">Home Events Stadistics</button>
+      </a>
+      <a href="./subscriptions.html">
+        <button class="aside_button" id="create">Create an Event</button>
+      </a>
+      <a href="../messages/adminmessages.html">
+        <button class="aside_button" id="messages">Messages List</button>
+      </a>
+      <a href="./subscriptions.html">
+        <button class="aside_button" id="subscriptions">Subscriptions</button>
+      </a>
+
+      <!-- Logout button -->
+      <button type="button" id="logOut" class="logout">Log Out</button>
+    </div>
+  </aside>
+
+  <main class="admin-panel">
+    <h1>Registered Subscriptions</h1>
+    <table class="subscriptions-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Email Address</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="subscriptions-table-body"></tbody>
+    </table>
+  </main>
+
+  <script src="../../main_page/script.js"></script>
+  <script src="../../assets/js/adminfooter.js"></script>
+</body>
+
+</html>

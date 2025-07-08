@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="../../../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="../../assets/css/stadistics.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/messages.css">
+    <title>Administrator</title>
+</head>
+
+<body>
+    <aside class="aside_bar">
+        <div class="links_container">
+            <a href="./stadistics.html" class="aside_button" id="home">Home Events Statistics</a>
+            <a href="./stadistics.html" class="aside_button" id="create">Create an Event</a>
+            <a href="../messages/adminmessages.html" class="aside_button" id="messages">Messages List</a>
+            <a href="../subscriptions/subscriptions.html" class="aside_button" id="subscriptions">Subscriptions</a>
+
+            <button type="button" id="logOut" class="logout">Log Out</button>
+        </div>
+    </aside>
+
+    </aside>
+
+    <!-- Main Content Section -->
+    <div id="section">
+        <!-- Welcome message -->
+        <div id="welcome" class="welcome"></div>
+
+        <!-- Event Counters Section -->
+        <div class="events">
+            <div>
+                <p class="event-counter" data-status="current">##variable## Current Events</p>
+            </div>
+            <div>
+                <p class="event-counter" data-status="cancelled">##variable## Cancelled Events</p>
+            </div>
+            <div>
+                <p class="event-counter" data-status="inactive">##variable## Inactive Events</p>
+            </div>
+            <div>
+                <p class="event-counter" data-status="total">##variable## Total Events</p>
+            </div>
+        </div>
+
+        <!-- Contact Counters Section -->
+        <div class="contact_container">
+            <!-- Mails Subscribed Counter -->
+            <div>
+                <p class="contador" data-recurso="subscriptions">##variable## Mails Subscribed</p>
+            </div>
+
+            <!-- Contact Messages Counter -->
+            <div>
+                <p class="contador" data-recurso="messages">##variable## Contact Messages</p>
+            </div>
+        </div>
+
+        <!-- Image displaying an animation -->
+        <img src="../../../img/homegif.gif" alt="Darius" class="darius_style">
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="../../assets/js/stadistics.js"></script>
+</body>
+
+</html>

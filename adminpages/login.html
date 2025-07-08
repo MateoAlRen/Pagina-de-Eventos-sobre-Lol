@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <title>Admin Login</title>
+</head>
+<body>
+    <!--This is the login-->
+    <form class="login_container">
+        <h3>Welcome, summoner!</h3>
+        <!--Some inputs to verify the user-->
+        <label for="text">Email</label>
+        <input type="email" placeholder="email" id="email" required>
+        <label for="text">Password</label>
+        <input type="password" placeholder="password" id="password" required>
+        <button type="submit" id="login">Log in</button>
+        <!--Animation gif to await for a response in the local server-->
+        <div id="estatus" class="info"></div>
+        <img src="../img/loading.gif" alt="loading" class="loader" id="loader">
+    </form>
+
+<script src="../assets/js/login.js"></script>
+</body>
+</html>

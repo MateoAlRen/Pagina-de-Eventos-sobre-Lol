@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.admin-panel {
+  max-width: 900px;
+  margin: 5rem auto;
+  background: rgba(46, 63, 83, 0.247);
+  border-radius: 8px;
+  padding: 90px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.subscriptions-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(90, 113, 132, 0.1);
+}
+
+.subscriptions-table th,
+.subscriptions-table td {
+  padding: 12px 15px;
+  text-align: left;
+  color: black;
+  background-color: rgba(10, 8, 8, 0.288);
+}
+
+.subscriptions-table thead {
+  background-color: #c7d2fe;
+  color: #1e40af;
+}
+
+.subscriptions-table tbody tr:nth-child(even) {
+  background-color: #f0f4ff;
+}
+
+.delete-btn {
+  background-color: #fca5a5;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: #7f1d1d;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #f87171;
+}
+
+@media (max-width: 600px) {
+  .subscriptions-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

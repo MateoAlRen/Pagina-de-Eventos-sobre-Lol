@@ -1,0 +1,77 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Robin",
+      "email": "robincortes@riwi.io",
+      "password": "password"
+    }
+  ],
+  "events": [
+    {
+      "titulo": "CHAMPIOSHIP SERIES",
+      "descripcion": "MUNDIAL DE LOL",
+      "fecha": "2025-12-29",
+      "status": "cancelled"
+    },
+    {
+      "titulo": "LIGA DE LATINOAMERICA",
+      "descripcion": "TORNEO EN LATINOAMERICA",
+      "fecha": "2025-09-05",
+      "status": "current"
+    },
+    {
+      "titulo": "TORNEO NACIONAL",
+      "descripcion": "COMPETENCIA A NIVEL NACIONAL DE LOL",
+      "fecha": "2025-07-20",
+      "status": "inactive"
+    }
+  ],
+  "messages": [
+    {
+      "id": "3",
+      "nombre": "Diego Ramírez",
+      "email": "diego.ramirez@hotmail.com",
+      "mensaje": "Excelente página web. Me interesa mucho el torneo cross-game. ¿Cuándo abren las inscripciones?",
+      "fecha": "2024-12-01T16:45:00.000Z",
+      "leido": true
+    },
+    {
+      "id": "4",
+      "nombre": "Ana Sofía",
+      "email": "ana.sofia@outlook.com",
+      "mensaje": "¡Hola! Soy streamer y me gustaría saber si hay oportunidades de colaboración para cubrir los eventos.",
+      "fecha": "2024-12-01T18:20:00.000Z",
+      "leido": true
+    },
+    {
+      "id": "5",
+      "nombre": "Carlos Mendoza",
+      "email": "carlos.mendoza@yahoo.com",
+      "mensaje": "Tengo problemas para registrarme en el torneo. ¿Podrían ayudarme con el proceso?",
+      "fecha": "2024-12-01T20:10:00.000Z",
+      "leido": true
+    },
+    {
+      "nombre": "Santiago López",
+      "email": "santi.lopez@gmail.com",
+      "mensaje": "Hola buenas tardes, quisiera saber más información sobre el evento del 20 de Julio, me gustaría participar pero apenas estoy comenzando en el mundo gamer.",
+      "fecha": "2025-07-06T22:22:33.455Z",
+      "leido": true,
+      "id": "01Huxp-"
+    },
+    {
+      "nombre": "jose",
+      "email": "robincortes@riwi.io",
+      "mensaje": "asadssadsdadsaasdsda",
+      "fecha": "2025-07-08T21:28:24.741Z",
+      "id": "UhDZEsd"
+    }
+  ],
+  "subscriptions": [
+    {
+      "email": "robin@gmail.com",
+      "id": 1
+    }
+  ]
+}

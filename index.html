@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--There's a metadata about league of legends-->
+    <meta name="description"
+        content="Welcome to our League of Legends fan page. Discover champion builds, meta guides, patch updates, and LoL news in one place." />
+    <meta name="keywords"
+        content="League of Legends, LoL, fan page, champions, guides, patch notes, builds, Riot Games" />
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/messages.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!--The icon in the page-->
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+
+    <title>Events Lol</title>
+</head>
+
+<body>
+    <!--Headers with some sections, like home, about, etc...-->
+    <header class="header_container">
+        <img src="./img/icon.png" alt="page_icon" class="header_icon" >
+        <nav>
+            <ul class="header_ul">
+                <a href="#home"><li>Home</li></a>
+                <a href="#heading"><li>About lol</li></a>
+                <li>Events</li>
+                <a href="#contacto"><li>Contact</li></a>
+            </ul>
+        </nav>
+        <!-- A login only for the admin in the page-->
+        <a href="./adminpages/login.html"><button id="login">Login</button></a>
+    </header>
+
+    <!--A simple slider with three images-->
+    <div class="slider_lol" id="home">
+        <ul>
+            <li>
+                <img src="./img/firstimage.jpeg" alt="lol-splash">
+            </li>
+            <li>
+                <img src="./img/secondimage.jpg" alt="lol-splash">
+            </li>
+            <li>
+                <img src="./img/thirdimage.jpg" alt="lol-splash">
+            </li>
+        </ul>
+    </div>
+
+    <!--A heading with the location of riot games-->
+    <div class="heading_lol" id="heading">
+        <iframe src="https://leagueoflegends.fandom.com/wiki/League_of_Legends" width="600" height="450"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+            <!--Description about league of legends-->
+            <h3>League of Legends</h3>
+            <p>League of Legends, often shortened to LoL, is a free-to-play, multiplayer online battle arena (MOBA) game
+                developed by Riot Games. In LoL, two teams of five players each compete to destroy the other team's
+                base, specifically their "Nexus" structure. Players choose from a roster of unique champions, each with
+                their own abilities, and work together to defeat the enemy team and advance across the map. </p>
+            <!--Description about the creator-->
+            <h3>About this page...</h3>
+            <p>
+                This is an event fanpage about lol for fans to advice them about some duels in the Esports, also we
+                can see some events of the glorius world of world of warcraft, subscribe to recive a lot of news about
+                this incredible games!
+            </p>
+        </div>
+    </div>
+
+    <section id="contacto" class="section gaming-contact-section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <div class="gaming-contact-info">
+                        <h2 class="title is-2 gaming-section-title">
+                            <span class="magic-text">📜 SEND ME A MESSAGE 📜</span> <br>
+                        </h2>
+                        <p class="subtitle is-5 gaming-subtitle">
+                            Do you have any issue about the events? Need help with the subscription?
+                        </p>
+                        <div class="gaming-features">
+                            <div class="feature">
+                                <span class="icon">⚡</span>
+                                <span>Let here your contact data</span>
+                            </div>
+                            <div class="feature">
+                                <span class="icon">🛡️ </span>
+                                <span>Send us a message and we will talk soon!</span>
+                            </div>
+                            <div class="feature">
+                                <span class="icon">🎮 </span>
+                                <span>Enjoy about lol eSports events!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="gaming-form-container">
+                        <form id="contactForm" class="gaming-form">
+                            <div class="field">
+                                <label class="label gaming-label">👤 Your name :</label>
+                                <div class="control">
+                                    <input class="input gaming-input" type="text" id="nombre" name="nombre"
+                                        placeholder="Put your name here" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label gaming-label">📧 Your email:</label>
+                                <div class="control">
+                                    <input class="input gaming-input" type="email" id="email" name="email"
+                                        placeholder="sample@email.com" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label gaming-label">💬 Message</label>
+                                <div class="control">
+                                    <textarea class="textarea gaming-textarea" id="mensaje" name="mensaje" rows="5"
+                                        placeholder="Let your message here..." required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <button type="submit" class="button is-large gaming-button is-fullwidth">
+                                        <span>SEND</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+
+            <section class="footer__subscribe">
+                <p>Subscribe to new events</p>
+                <form id="form-suscripcion">
+                    <label for="email" class="visually-hidden">Email address</label>
+                    <input type="email" id="email-footer" placeholder="Email address" class="footer__input" required />
+                    <button type="submit" class="footer__button">Subscribe</button>
+                </form>
+            </section>
+
+            <section class="footer__info">
+                <h3>Info</h3>
+                <p>
+                    Receive notifications about tournaments, competitions, and special events from the League of Legends
+                    universe.
+                </p>
+            </section>
+
+        </div>
+    </footer>
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/footer.js"></script>
+</body>
+
+</html>
