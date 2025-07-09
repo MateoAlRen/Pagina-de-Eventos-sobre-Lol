@@ -54,3 +54,42 @@ Este proyecto simula una plataforma web donde los usuarios pueden enviar mensaje
    - 🗑 Botón para eliminar cada mensaje
 
 También puedes usar el campo de búsqueda para **filtrar por correo electrónico** o **filtrar por correo nombre** en tiempo real.
+
+
+# Página Administrativa de Suscripciones
+
+Esta página forma parte del proyecto **Sistema Web de Gestión y Difusión de Eventos**, con temática de League of Legends (LoL).
+
+## 🎯 Objetivo
+
+Permitir que el administrador visualice todos los correos electrónicos registrados por los visitantes del sitio, y pueda eliminarlos si lo desea.
+
+---
+
+## 📌 ¿Qué hace esta página?
+
+- Muestra en una tabla todas las suscripciones almacenadas.
+- Cada fila contiene:
+  - `ID` del registro
+  - `Correo electrónico`
+  - Botón para eliminar la suscripción
+- La tabla se actualiza automáticamente después de eliminar un correo.
+
+---
+
+## 🛠️ Tecnologías usadas
+
+- **HTML5** semántico
+- **CSS3** con estilo suave (blancos y pasteles)
+- **JavaScript** con `fetch` para consumir el API
+- **JSON Server** para almacenar los datos localmente
+
+---
+
+## 📂 Archivos importantes
+
+| Archivo             | Descripción                                      |
+|---------------------|--------------------------------------------------|
+| `suscripciones.html` | Interfaz principal con la tabla de suscripciones |
+| `suscripciones.css`  | Estilos claros y responsivos para la página      |
+| `suscripciones.js`   | Lógica para leer y eliminar suscripciones        |
